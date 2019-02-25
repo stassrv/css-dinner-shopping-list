@@ -1,0 +1,112 @@
+*{transition: all .1s ease-in;}
+
+body{
+    font: 400 26px/1.3 "Tebuchet MC", Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #394046;
+    border: 25px solid #fff;
+    box-sizing: border-box;
+}
+
+.ba-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.ba-header, .ba-footer{
+    display: block;
+    text-align: center;
+    background-color: #4A4F55;
+    color: #eb7e7f;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.ba-footer p{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 0px;
+}
+
+h4, .ba-footer{
+    font: 400 26px/1.3 Arial, sans-serif;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ba-shopping-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.ba-shopping-list li{
+    background-color: #7a7593;
+    border: 0 solid #fff;
+}
+
+.ba-shopping-list li:nth-child(odd) {
+    background-color: #88839e;
+}
+
+.ba-shopping-list label{
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.ba-shopping-list [type="checkbox"]{
+    width: 26px;
+    height: 26px;
+    vertical-align: middle; /*Выравнивает элемент по вертикали относительно своего родителя*/
+    position: relative; /* Относительное позиционирование. Положение элемента устанавливается относительно его исходного места. */
+    top: -2;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ba-shopping-list [type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
+
+.ba-shopping-list label:hover {
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    background-color: #625E77;
+}
+
+.ba-shopping-list label:active {
+    background-color: red;
+}
+
+.ba-deckription::before {
+    content: "( ";
+}
+
+.ba-deckription::after {
+    content: " )";
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+* {
+    box-sizing: border-box;
+   }
+   html {
+    height: 100%;
+   }
+   html,
+   body {
+    min-height: 100%;
+   }
